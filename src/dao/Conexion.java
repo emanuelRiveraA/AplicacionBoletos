@@ -19,7 +19,7 @@ public class Conexion {
     //2. constructor privado
     private Conexion() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");//localizar el driver
-        cnn=DriverManager.getConnection("jdbc:mysql://localhost:3306/compraBoletos?useLegacyDatetimeCode=false&serverTimezone=America/New_York", "root","root");
+        cnn=DriverManager.getConnection("jdbc:mysql://localhost:3306/compraBoletos?useLegacyDatetimeCode=false&serverTimezone=America/New_York", "user","pass");
     }
     
     //3. Metodo de clase tipo de la clase
